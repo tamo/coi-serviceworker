@@ -8,7 +8,7 @@
     "url": "git+https://github.com/gzuidhof/coi-serviceworker.git"
   },
   "scripts": {
-    "minify": "terser coi-serviceworker.js --mangle --compress --format --output coi-serviceworker.min.js"
+    "minify": "terser coi-serviceworker.js --mangle --toplevel --compress --format --output coi-serviceworker.min.js"
   },
   "keywords": [
     "cross-origin",
