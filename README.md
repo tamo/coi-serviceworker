@@ -52,8 +52,8 @@ window.coi = {
     coepDegrade: () => true,
     // Override this if you want to prompt the user and do reload at your own leisure. Maybe show the user a message saying:
     // "Click OK to refresh the page to enable <...>"
-    // You can see window.sessionStorage.getItem("coiReloadedBySelf") for the reason to reload.
-    doReload: () => window.location.reload(),
+    // You can see url.searchParams.get("coiReloaded") for the reason to reload.
+    doReload: () => window.location.replace(url.href),
     // Set to true if you don't want coi to log anything to the console.
     quiet: false
 }
